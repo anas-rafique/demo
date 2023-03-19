@@ -1,0 +1,117 @@
+.parent{
+    height: 70vh;
+     width: 50%;
+    background-color: #000;
+    display: grid;
+    /* grid-template-columns: 133px 133px 133px; */
+    grid-template-columns: repeat(3,1fr);
+    /* grid-template-rows: repeat(3,1fr); */
+    /* row-gap: 10px;
+    column-gap: 40px; */
+    /* justify-items: center; */
+    /* align-items: center; */
+    /* place-items: center; */
+    gap: 10px 10px;
+}
+
+.child{
+    /* width: 100px;
+    height: 100px; */
+    background-color: #fff;
+    border: 1px solid red;
+    position: relative;
+}
+
+.cen{
+    /* justify-self: center;
+    align-self: center; */
+    /* place-self: center; */
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    /* grid-column: 1/ span 2;
+    grid-row: 1/span 3; */
+
+    /* animation-name: anas; */
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    /* animation-timing-function: ease-in; */
+
+
+}
+
+/* .child:first-child{
+    background-color: aqua;
+}
+
+.child:last-child{
+    background-color: aquamarine;
+} */
+
+/* .child:nth-child(even){
+    background-color: orange;
+}
+
+.child:nth-child(odd){
+    background-color: blue;
+} */
+
+.child:nth-child(4n-2){
+    background-color: bisque;
+}
+
+@keyframes anas {
+    0%{
+        background-color: aqua;
+        top: 0;
+        left: 0;
+        transform: scale(30%);
+        /* transform: rotate(0deg); */
+    }
+
+    25%{
+        background-color: red;
+        top: 50px;
+        left: 50px;
+        /* transform: rotate(25deg); */
+        transform: scale(60%);
+
+
+    }
+
+    50%{
+        background-color: yellow;
+        top: 75px;
+        left: 30px;
+        /* transform: rotate(50deg); */
+        transform: scale(90%);
+
+
+    }
+
+    75%{
+        background-color: maroon;
+        top: 40px;
+        left: 10px;
+        /* transform: rotate(90deg); */
+        transform: scale(120%);
+
+
+    }
+
+    100%{
+        background-color: blue;
+        top: 0;
+        left: 0;
+        /* transform: rotate(360deg); */
+        transform: scale(150%);
+
+
+    }
+    
+}
+
+.row{
+    /* grid-row-start: 3;
+    grid-row-end: 5; */
+}
